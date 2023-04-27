@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs euro</title>
+    <script>
+    function Euro()
+    {
+        var a = parseFloat(document.getElementById("a").value);
+        var b = parseFloat(document.getElementById("b").value);
+        document.getElementById("wynik").innerHTML= a * b;
+    }
+    </script>
+    
+</head>
+<body>
+    <h1>Licznik euro</h1>
+    <p>podaj kurs </p>
+    <input type="text" id="b">
+    <p>podaj zł </p>
+    <input type="text" id="a">
+    <div id="wynik">TU UKAŻE SIĘ WYNIK</div>
+    <button onclick="Euro()">przelicz</button>
+    
+</body>     
+</html>
